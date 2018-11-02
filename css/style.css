@@ -1,0 +1,12 @@
+h1{
+  font-family: 'Noto Serif', serif;
+}
+
+.caps-text{
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
