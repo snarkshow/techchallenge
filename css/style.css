@@ -113,3 +113,28 @@ nav ul li{
   font-family: cursive;
   text-align: center;
 }
+
+/*blog section*/
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*blog posts*/
+.grid-cell{
+  /*flex basis makes it so that the blog posts are responsive but I keep getting 3 items / 1 item, rather than 2x 2*/
+  flex-basis: 45px;
+  /* when I keep flex-basis at 45px, the blog posts are perfectly squared.  when I change it to percentages, the blog text becomes longer than the width of the pictures*/
+  margin: auto;
+}
+
+@media all and (max-width: 500px) {
+  .grid{
+    /* blog posts become a single column on a smaller screen */
+    flex-direction: column;
+  }
+}
