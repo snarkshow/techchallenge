@@ -7,7 +7,7 @@
     <!--font awesome library-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <!--Raleway font family-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
     <!--Noto Serif font family-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
   </head>
@@ -30,24 +30,35 @@
     </header>
 
 <!--splash page on its own with dog photo-->
-  <div id = "hero">
-      <div id="hero-image"><img src="assets/image-1.jpg" alt="Shiba Inu in a harness sitting on a couch"></div>
+  <section class = "hero">
+      <!--<div class="hero-image"><img src="assets/image-1.jpg" alt="Shiba Inu in a harness sitting on a couch"></div>-->
 <!--text box over shiba inu-->
-      <div id = "hero-text">
+      <div class = "hero-text">
 <h2>Winter 2019 Tech Test</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
       </div>
-    </div>
+    </section>
 
 <!--Second section of page, with photo carousel-->
-    <div id = "carousel">
-      <h2>Welcome to HackerYou</h2>
+    <section class= "carousel">
+      <div class = "carousel-header">
+        <h2>Welcome to HackerYou</h2>
+      </div>
 <!--if this was a functional carousel, there would be more than one image hence the class?-->
+<div class ="left-arrow">
+  <i class="fas fa-angle-left fa-4x"></i>
+</div>
+<div class="right-arrow">
+  <i class="fas fa-angle-right fa-4x"></i>
+</div>
       <div class="carousel-image"> <img src="assets/image-2.jpg" alt="a dark-haired Asian woman and a blonde white woman sit behind Apple laptops"></div>
-        <div class = "caps-text"><p>Full-Time Web Development Immersive</p></div>
-        <div class = "carousel-image-date">January 1st, 2019</div>
-<!--end div "carousel"-->
-    </div>
+
+        <div class="carousel-caption">
+            <div class = "caps-text"><p>Full-Time Web Development Immersive</p></div>
+          </div>
+          <div class = "carousel-image-date">January 1st, 2019</div>
+<!--end carousel-->
+    </section>
 
 <!--New section, blog posts w/ teaser text, formatted dates over photos-->
     <div id="blog">
