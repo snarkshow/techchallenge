@@ -79,10 +79,10 @@ a:hover {
   background-size: cover;
   display: flex;
   flex:1;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -131,7 +131,7 @@ a:hover {
   margin: 0px;
   padding-top: 25px;
   padding-bottom: 75px;
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -143,12 +143,19 @@ a:hover {
 }
 
 .carousel-image{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
   display: flex;
   flex: 1;
   justify-content: center;
+  margin: auto;
+  padding: 10px;
+  max-width: 100%;
+}
+
+
+@media all and (max-width: 700px) {
+.carousel-image {
+    min-width: 25%;
+  }
 }
 
 .right-arrow{
@@ -165,7 +172,6 @@ a:hover {
   padding-top: 130px;
   position: relative;
 }
-
 
 /*full time immersive*/
 .carousel-caption{
@@ -185,6 +191,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
   padding-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
@@ -192,7 +200,8 @@ a:hover {
 
 /*blog posts*/
 .grid-cell{
-    justify-content: space-between;
+  justify-content: space-between;
+  display:block;
   /*flex basis makes it so that the blog posts are responsive but I keep getting 3 items / 1 item, rather than 2x 2*/
   flex-basis: 300px;
   /* when I keep flex-basis at 45px, the blog posts are perfectly squared.  when I change it to percentages, the blog text becomes longer than the width of the pictures*/
@@ -259,7 +268,8 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   font-size: 90%;
   font-weight: 400;
-  width: 20vw;
+  margin:10px;
+  width: 20%;
 }
 
 .bottom-nav-1-heading{
@@ -271,6 +281,7 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   font-size: 90%;
   font-weight: 400;
+  margin:10px;
   text-transform: uppercase;
 }
 
@@ -285,7 +296,8 @@ a:hover{
 
 .bottom-nav-3{
   color: white;
-  width: 40vw;
+    margin:10px;
+  width: 40%;
 }
 
 .bottom-nav-3-heading{
@@ -329,15 +341,6 @@ input[type=submit] {
   }
 }
 
-/*I'm trying to get the 3 columns in the bottom footer to line up as a single column when the screen gets small*/
-@media (max-width: 500px) {
-  .bottom-nav  {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 @media (max-width: 300px) {
   input[type=submit] {
     bottom: -20px;
@@ -345,10 +348,30 @@ input[type=submit] {
   }
 }
 
+/*I'm trying to get the 3 columns in the bottom footer to line up as a single column when the screen gets small*/
+@media (max-width: 600px) {
+  .bottom-nav  {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
+/*I'm trying to get the 3 columns in the bottom footer to line up as a single column when the screen gets small*/
+@media (max-width: 600px) {
+  .bottom-nav-1  {
+    width: 50%;
+  }
+}
+
 .footer{
   background-color: #231F1E;
-    display: flex;
+  display: flex;
+  width:100%;
 }
+
 
 .copyright {
   color: white;
@@ -367,10 +390,14 @@ input[type=submit] {
   justify-content: flex-end;
   padding-top: 15px;
   padding-right: 280px;
-  width: 100vw;
+  width: 100%;
 }
 
 .social-media a {
     color: white;
     padding-left: 15px;
+}
+
+.social-media a:hover{
+  color: red;
 }
