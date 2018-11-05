@@ -4,6 +4,8 @@
     <title>HackerYou Winter 2019 Tech Test</title>
     <!--CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--font awesome library-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <!--Raleway font family-->
@@ -19,11 +21,11 @@
         <nav>
           <div class = "caps-text">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Bootcamp</li>
-              <li>Part-time</li>
+              <a href=#><li>Home</li></a>
+              <a href=#><li>About</li></a>
+              <a href=#><li>Contact</li></a>
+              <a href=#><li>Bootcamp</li></a>
+              <a href=#><li>Part-time</li></a>
             </ul>
           </div>
         </nav>
@@ -61,76 +63,88 @@
     </section>
 
 <!--New section, blog posts w/ teaser text, formatted dates over photos-->
-    <div class="grid">
+<div class="grid">
 <!--Blog 1-->
-      <div class = "grid-cell"><img src="assets/image-3.jpg" alt="a white man with a mustache stands at an Apple laptop">
-        <div class = "blog-dates">Jan 9, 2019</div>
-          <h2>Web Development</h2>
+  <div class = "grid-cell"><img src="assets/image-3.jpg" alt="a white man with a mustache stands at an Apple laptop">
+    <div class="blog-text">
+      <div class = "blog-dates">Jan 9, 2019</div>
+        <h2>Web Development</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="blog-link"> Read More </div>
+            <div class="blog-link"><a href=#>Read More</a></div>
+          </div>
           </div>
 
 <!--Blog 2-->
-      <div class = "grid-cell"><img src="assets/image-4.jpg" alt="two white women and a white man all wearing chambray shirts, with one hand on their hips">
-        <div class="dates">Jan 7, 2019</div>
-          <h2>Team Culture</h2>
+  <div class = "grid-cell"><img src="assets/image-4.jpg" alt="two white women and a white man all wearing chambray shirts, with one hand on their hips">
+    <div class="blog-text">
+      <div class="blog-dates">Jan 7, 2019</div>
+        <h2>Team Culture</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class = "blog-link">Read More</div>
+            <div class = "blog-link"><a href=#>Read More</a></div>
+          </div>
           </div>
 
 <!--Blog 3-->
-<div class = "grid-cell"><img src="assets/image-6.jpg" alt="woman looking at her computer screen">
-  <div class="dates">Jan 6, 2019</div>
-    <h2>Javascript</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class = "blog-link">Read More</div>
-    </div>
+  <div class = "grid-cell"><img src="assets/image-6.jpg" alt="woman looking at her computer screen">
+    <div class="blog-text">
+      <div class="blog-dates">Jan 6, 2019</div>
+        <h2>Javascript</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class = "blog-link"><a href=#>Read More</a></div>
+          </div>
+          </div>
 
 <!--Blog 4-->
-<div class = "grid-cell"><img src="assets/image-5.jpg" alt="2 men looking at a computer screen, sitting next to a woman">
-  <div class="dates">Jan 4, 2019</div>
-    <h2>Student Experience</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class = "blog-link">Read More</div>
+  <div class = "grid-cell"><img src="assets/image-5.jpg" alt="2 men looking at a computer screen, sitting next to a woman">
+    <div class="blog-text">
+      <div class="blog-dates">Jan 4, 2019</div>
+        <h2>Student Experience</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class = "blog-link"><a href=#>Read More</a></div>
+    </div>
     </div>
 
 <!--end div "blog"-->
     </div>
 
 <!--bottom nav bar-->
-<div id = "bottom-nav">
-  <div class="caps-text"><p>Hackeryou Tech Test</p></div>
+<div class = "bottom-nav">
+  <div class="bottom-nav-1">
+    <div class="bottom-nav-1-heading"><p>Hackeryou Tech Test</p></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<!--buttons, but vertical instead of horizontal-->
-      <div class = "caps-text">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Bootcamp</li>
-          <li>Part-time</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+  </div>
+
+<!--nav bar links, but vertical instead of horizontal-->
+  <div class="bottom-nav-2">
+    <a href=#><p>Home</p></a>
+        <a href=#><p>About</p></a>
+            <a href=#><p>Bootcamp</p></a>
+                <a href=#><p>Part-time</p</a>
+                    <a href=#><p>Contact</p></a>
+    </div>
+
 <!--Email address input w/ submit button-->
-  <div class="caps-text"><p>Subscribe to our newsletter</p></div>
+<div class="bottom-nav-3">
+  <div class="bottom-nav-3-heading"><p>Subscribe to our newsletter</p></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <form>
-        <input type="text" name="emailaddress"><br>
-        <input type="submit" value="Submit">
+        <input type="text" name="emailaddress" value="email address"><br>
+        <input type="submit" value="Subscribe" id="subscribe">
       </form>
+    </div>
 <!--end of bottomNav-->
 </div>
 
 <!--Footer starts-->
 
 <footer class="footer">
-<div class="caps-text">Copyright 2018 HackerYou</div>
+  <div class="copyright">Copyright 2018 HackerYou</div>
 <!-- social media navigation, aligned to the right-->
 <div class = "social-media">
-  <a href="https://twitter.com/hackeryou?lang=en"><i class="fab fa-twitter"></i></a>
-  <a href="https://www.facebook.com/thisishackeryou/"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://www.instagram.com/thisishackeryou/?hl=en"><i class="fab fa-instagram"></i></a>
-  <a href"https://plus.google.com/112997704613800358350"><i class="fab fa-google-plus-g"></i></a>
+  <a href=#><i class="fab fa-twitter"></i></a>
+  <a href=#><i class="fab fa-facebook-f"></i></a>
+  <a href=#><i class="fab fa-instagram"></i></a>
+  <a href=#><i class="fab fa-google-plus-g"></i></a>
 </div>
     </footer>
   </body>

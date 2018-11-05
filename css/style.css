@@ -28,6 +28,12 @@ header h2{
   padding: 25px 2px 25px 100px;
 }
 
+/*how to get the HackerYou logo to center when the screen is small??*/
+@media (max-width: 762px) {
+header h2 {
+}
+}
+
 /*top bar nav*/
 nav ul {
     display: flex;
@@ -44,12 +50,31 @@ nav ul li{
   padding: 5px 30px 5px 5px;
 }
 
+nav ul a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+    color:red;
+}
+
+@media (max-width: 762px) {
+  nav ul{
+    padding: 50px;
+    text-align: center;
+    flex-direction: column;
+}
+}
+
 /*shiba inu hero image*/
 .hero {
   align-items: center;
   background: url("../assets/image-1.jpg") 100% no-repeat;
+  background-attachment: scroll;
   background-size: cover;
   display: flex;
+  flex:1;
   height: 100vh;
   justify-content: center;
   text-align: center;
@@ -60,10 +85,23 @@ nav ul li{
 .hero-text {
    background: white;
     position: absolute;
+    height: 30vh;
+    width: 20vw;
     right: 670px;
     bottom: 300px;
     left: 100px;
     padding: 50px;
+}
+
+@media (max-width: 762px) {
+  .hero-text {
+      background: none  ;
+      color: white;
+      width: 100vw;
+      padding: 10px;
+      position: sticky;
+      top: 300px;
+}
 }
 
 /*carousel section*/
@@ -72,6 +110,7 @@ nav ul li{
   margin: 0px;
   padding-top: 25px;
   padding-bottom: 75px;
+  width: 100vw;
 }
 
 
@@ -83,23 +122,29 @@ nav ul li{
 }
 
 .carousel-image{
-  position:relative;
   margin: auto;
-  width: 50%;
+  width: 50vw;
   padding: 10px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .right-arrow{
   float: right;
   padding-right: 140px;
-    padding-top: 130px;
+  padding-top: 130px;
+  position: relative;
 }
+
 
 .left-arrow{
   float: left;
   padding-left: 140px;
-  padding-top: 125px;
+  padding-top: 130px;
+  position: relative;
 }
+
 
 /*full time immersive*/
 .carousel-caption{
@@ -126,15 +171,178 @@ nav ul li{
 
 /*blog posts*/
 .grid-cell{
+    justify-content: space-between;
   /*flex basis makes it so that the blog posts are responsive but I keep getting 3 items / 1 item, rather than 2x 2*/
-  flex-basis: 45px;
+  flex-basis: 300px;
   /* when I keep flex-basis at 45px, the blog posts are perfectly squared.  when I change it to percentages, the blog text becomes longer than the width of the pictures*/
   margin: auto;
+  padding: 45px;
 }
 
 @media all and (max-width: 500px) {
   .grid{
     /* blog posts become a single column on a smaller screen */
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+}
+
+/*blog post dates*/
+.blog-dates{
+  background: red;
+  color: white;
+  display:inline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  float: right;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/*section of text below each photograph*/
+.blog-text {
+  background: #EDFEF5;
+  padding: 1 15 25 25;
+}
+
+/*read more button*/
+.blog-link a {
+  color: red;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blog-link a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.bottom-nav{
+  align-items: stretch;
+  background: 	#464343;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.bottom-nav-1{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 90%;
+  font-weight: 400;
+  width: 20vw;
+}
+
+.bottom-nav-1-heading{
+ text-transform: uppercase;
+}
+
+.bottom-nav-2  {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 90%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bottom-nav-2 a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+.bottom-nav-3{
+  color: white;
+  width: 40vw;
+}
+
+.bottom-nav-3-heading{
+   text-transform: uppercase;
+}
+
+
+input[type=text] {
+    font-family: cursive;
+    font-size: 14px;
+    font-style: italic;
+    padding:5px;
+    position: absolute;
+    border:2px solid #ccc;
+    width: 275px;
+}
+
+input[type=submit] {
+    background: red;
+    border: red;
+    color: white;
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 10 10 10 10;
+    position: relative;
+    bottom: 17px;
+    right: -280px;
+    text-transform: uppercase;
+}
+
+#subscribe:hover {
+  background: white;
+  color: red;
+}
+
+/*I'm trying to get the 3 columns in the bottom footer to line up as a single column when the screen gets small*/
+@media (max-width: 500px) {
+  .bottom-nav  {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 300px) {
+  input[type=submit] {
+    bottom: -20px;
+    right: 0px;
+  }
+}
+
+.footer{
+  background-color: #231F1E;
+    display: flex;
+}
+
+.copyright {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  justify-content: flex-start;
+  padding-left: 150px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-right: 280px;
+  width: 100vw;
+}
+
+.social-media a {
+    color: white;
+    padding-left: 15px;
 }
