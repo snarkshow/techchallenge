@@ -44,19 +44,21 @@
     </section>
 
 <!--Second section of page, with photo carousel-->
-    <section class= "carousel">
+<section class= "carousel">
       <div class = "carousel-header">
         <h2>Welcome to HackerYou</h2>
       </div>
-<!--if this was a functional carousel, there would be more than one image hence the class?-->
-<div class ="left-arrow">
-  <i class="fas fa-angle-left fa-4x"></i>
-</div>
-<div class="right-arrow">
-  <i class="fas fa-angle-right fa-4x"></i>
-</div>
-      <div class="carousel-image"> <img src="assets/image-2.jpg" alt="a dark-haired Asian woman and a blonde white woman sit behind Apple laptops"></div>
-
+<!--if this was a functional carousel, there would be more than one image hence the class.  this level contains the left/right arrows and the photo in the slider itself-->
+  <div class="carousel-slider">
+    <div class ="left-arrow">
+      <i class="fas fa-angle-left fa-4x"></i>
+        </div>
+<!--this image will resize to fit within the left/right arrows, even with flex-->
+  <div class="carousel-image"> <img src="assets/image-2.jpg" alt="a dark-haired Asian woman and a blonde white woman sit behind Apple laptops"></div>
+    <div class="right-arrow">
+      <i class="fas fa-angle-right fa-4x"></i>
+        </div>
+      </div>
         <div class="carousel-caption">
             <div class = "caps-text"><p>Full-Time Web Development Immersive</p></div>
           </div>
