@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
     <!--Noto Serif font family-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+    <!--Parisienne font family-->
+    <!--I couldn't find a font that quite matched the one cursive ones in the image so I selected my own-->
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
   </head>
 
 <!--Heading w/ nav links aligned to the right-->
@@ -19,7 +22,6 @@
     <header>
       <h2>HackerYou</h2>
         <nav>
-          <div class = "caps-text">
             <ul>
               <a href=#><li>Home</li></a>
               <a href=#><li>About</li></a>
@@ -27,21 +29,19 @@
               <a href=#><li>Bootcamp</li></a>
               <a href=#><li>Part-time</li></a>
             </ul>
-          </div>
         </nav>
     </header>
 
 <!--splash page on its own with dog photo-->
   <section class = "hero">
-      <!--<div class="hero-image"><img src="assets/image-1.jpg" alt="Shiba Inu in a harness sitting on a couch"></div>-->
-<!--text box over shiba inu-->
-  <div class = "hero-text-container">
-      <div class = "hero-text">
-<h2>Winter 2019 Tech Test</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+    <!--text box over shiba inu-->
+      <div class = "hero-text-container">
+        <div class = "hero-text">
+          <h2>Winter 2019 Tech Test</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
 <!--Second section of page, with photo carousel-->
 <section class= "carousel">
@@ -51,20 +51,20 @@
 <!--if this was a functional carousel, there would be more than one image hence the class.  this level contains the left/right arrows and the photo in the slider itself-->
   <div class="carousel-slider">
     <div class ="left-arrow">
-      <i class="fas fa-angle-left fa-4x"></i>
-        </div>
+      <a href=#><i class="fas fa-angle-left fa-4x"></i></a>
+    </div>
 <!--this image will resize to fit within the left/right arrows, even with flex-->
   <div class="carousel-image"> <img src="assets/image-2.jpg" alt="a dark-haired Asian woman and a blonde white woman sit behind Apple laptops"></div>
     <div class="right-arrow">
-      <i class="fas fa-angle-right fa-4x"></i>
-        </div>
+      <a href=#><i class="fas fa-angle-right fa-4x"></i></a>
+    </div>
       </div>
-        <div class="carousel-caption">
-            <div class = "caps-text"><p>Full-Time Web Development Immersive</p></div>
-          </div>
-          <div class = "carousel-image-date">January 1st, 2019</div>
+    <div class="carousel-caption">
+        <p>Full-Time Web Development Immersive</p>
+      </div>
+    <div class = "carousel-image-date">January 1st, 2019</div>
 <!--end carousel-->
-    </section>
+  </section>
 
 <!--New section, blog posts w/ teaser text, formatted dates over photos-->
 <div class="grid">
@@ -75,8 +75,8 @@
         <h2>Web Development</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="blog-link"><a href=#>Read More</a></div>
-          </div>
-          </div>
+      </div>
+    </div>
 
 <!--Blog 2-->
   <div class = "grid-cell"><img src="assets/image-4.jpg" alt="two white women and a white man all wearing chambray shirts, with one hand on their hips">
@@ -85,8 +85,8 @@
         <h2>Team Culture</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class = "blog-link"><a href=#>Read More</a></div>
-          </div>
-          </div>
+      </div>
+    </div>
 
 <!--Blog 3-->
   <div class = "grid-cell"><img src="assets/image-6.jpg" alt="woman looking at her computer screen">
@@ -95,8 +95,8 @@
         <h2>JavaScript</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class = "blog-link"><a href=#>Read More</a></div>
-          </div>
-          </div>
+      </div>
+    </div>
 
 <!--Blog 4-->
   <div class = "grid-cell"><img src="assets/image-5.jpg" alt="2 men looking at a computer screen, sitting next to a woman">
@@ -105,11 +105,10 @@
         <h2>Student Experience</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class = "blog-link"><a href=#>Read More</a></div>
+      </div>
     </div>
-    </div>
-
-<!--end div "blog"-->
-    </div>
+</div>
+<!--end div for blog posts grid-->
 
 <!--bottom nav bar-->
 <div class = "bottom-nav">
@@ -121,11 +120,11 @@
 <!--nav bar links, but vertical instead of horizontal-->
   <div class="bottom-nav-2">
     <a href=#><p>Home</p></a>
-        <a href=#><p>About</p></a>
-            <a href=#><p>Bootcamp</p></a>
-                <a href=#><p>Part-time</p</a>
-                    <a href=#><p>Contact</p></a>
-    </div>
+    <a href=#><p>About</p></a>
+    <a href=#><p>Bootcamp</p></a>
+    <a href=#><p>Part-time</p</a>
+    <a href=#><p>Contact</p></a>
+  </div>
 
 <!--Email address input w/ submit button-->
 <div class="bottom-nav-3">
@@ -136,20 +135,20 @@
         <div class="form-submit"><input type="submit" value="Subscribe" id="subscribe"></div>
       </form>
     </div>
-<!--end of bottomNav-->
 </div>
+<!--end of bottom nav bar-->
 
 <!--Footer starts-->
-
 <footer class="footer">
-  <div class="copyright">Copyright 2018 HackerYou</div>
+  <div class="copyright"><i class="far fa-copyright"></i> 2018 HackerYou</div>
+
 <!-- social media navigation, aligned to the right-->
-<div class = "social-media">
-  <a href=#><i class="fab fa-twitter"></i></a>
-  <a href=#><i class="fab fa-facebook-f"></i></a>
-  <a href=#><i class="fab fa-instagram"></i></a>
-  <a href=#><i class="fab fa-google-plus-g"></i></a>
-</div>
+  <div class = "social-media">
+    <a href=#><i class="fab fa-twitter"></i></a>
+    <a href=#><i class="fab fa-facebook-f"></i></a>
+    <a href=#><i class="fab fa-instagram"></i></a>
+    <a href=#><i class="fab fa-google-plus-g"></i></a>
+  </div>
     </footer>
   </body>
 </html>
