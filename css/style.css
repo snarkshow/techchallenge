@@ -109,15 +109,15 @@ a:hover {
 }
 
 /*shiba inu text box.  See Tech Challenge Documentation doc*/
+
 .hero-text {
     background: white;
-    bottom: 300px;
-    height: 30%;
     right: 75%;
     left: 100px;
     padding: 50px;
     position: absolute;
     width: 20%;
+    word-wrap: break-word;
 }
 
 .hero-text h2{
@@ -126,6 +126,8 @@ a:hover {
 }
 
 .hero-text p{
+  display: inline-block;
+  margin: 10px;
   letter-spacing: 0.1em;
   line-height: 1.5;
   text-align: left;
